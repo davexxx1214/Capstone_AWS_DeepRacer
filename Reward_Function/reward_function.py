@@ -255,7 +255,7 @@ def reward_function(params):
 
     ## Incentive for finishing the lap in less steps ##
     REWARD_FOR_FASTEST_TIME = 1500
-    STANDARD_TIME = 10
+    STANDARD_TIME = 11
     FASTEST_TIME = 8.72
     if progress == 100:
         finish_reward = max(1e-3, (-REWARD_FOR_FASTEST_TIME /
