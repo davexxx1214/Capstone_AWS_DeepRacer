@@ -123,7 +123,7 @@ def reward_function(params):
 
     #################### RACING LINE ######################
 
-    # Optimal racing line for the Spain track
+    # Optimal racing line for the invent track
     racing_track = [[2.91, 0.68319, 4.0, 0.04],
                     [3.32, 0.68334, 4.0, 0.1025],
                     [3.42, 0.68337, 4.0, 0.025],
@@ -255,8 +255,8 @@ def reward_function(params):
 
     ## Incentive for finishing the lap in less steps ##
     REWARD_FOR_FASTEST_TIME = 1500
-    STANDARD_TIME = 37
-    FASTEST_TIME = 27
+    STANDARD_TIME = 10
+    FASTEST_TIME = 8.72
     if progress == 100:
         finish_reward = max(1e-3, (-REWARD_FOR_FASTEST_TIME /
                   (15*(STANDARD_TIME-FASTEST_TIME)))*(steps-STANDARD_TIME*15))
